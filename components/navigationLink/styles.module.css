@@ -1,0 +1,22 @@
+.navigationLink {
+  font-size: 1.4em;
+  text-decoration: unerline;
+  display: block;
+  font-weight: normal;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignLeft::before {
+  content: '<< ';
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.alignRight::after {
+  content: ' >>';
+}
