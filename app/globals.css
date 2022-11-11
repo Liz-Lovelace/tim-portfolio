@@ -3,6 +3,7 @@
   --neutral: #6d6d6d;
   --bright-text: #f9f9f9;
   --accent: #fe0100;
+  --accent-muted: #ae3130;
 }
 
 body {
@@ -15,15 +16,35 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, h7 {
-  
-}
-
-a {
-  color: inherit;
-  font-weight: bold;
-}
-
 * {
   box-sizing: border-box;
 }
+
+h1 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+a {
+  --hyperlink-underline-color: var(--accent-muted);
+  color: var(--accent);
+  background-image: linear-gradient(to bottom,
+    var(--hyperlink-underline-color) 0,
+    var(--hyperlink-underline-color) 100%);
+  background-position: 0 95%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  text-decoration: none;
+}
+/*
+a:hover {
+  color: var(--accent);
+  background-image: linear-gradient(to bottom,
+    var(--accent-muted) 0,
+    var(--accent-muted) 100%);
+}
+
+*/

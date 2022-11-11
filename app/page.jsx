@@ -21,6 +21,7 @@ export default function Home() {
       </NavigationLink>
 
       <h2> Get in touch </h2>
+      todo: make entire horizontal area clickable
     </>
   )
 }
