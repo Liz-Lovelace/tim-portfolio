@@ -1,13 +1,17 @@
 import styles from './page.module.css'
 import HeaderPicture from '/components/headerPicture'
 import NavigationLink from '/components/navigationLink'
+import ProjectTiles from '/components/projectTiles'
+import Contacts from '/components/contacts'
 
 export default function Home() {
-  return (
-    <>
+  return (<>
+      <h2> Get in touch </h2>
+      <Contacts />
       <HeaderPicture />
 
       <h2> My projects </h2>
+      <ProjectTiles />
       <NavigationLink href="/projects/test-project">
         Test project
       </NavigationLink>
@@ -20,8 +24,6 @@ export default function Home() {
         More
       </NavigationLink>
 
-      <h2> Get in touch </h2>
-      todo: make entire horizontal area clickable
     </>
   )
 }

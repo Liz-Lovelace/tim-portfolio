@@ -1,5 +1,4 @@
 import './globals.css'
-import styles from './layout.module.css'
 
 export default function RootLayout({ children }) {
   return (
@@ -11,9 +10,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
-        <main className={styles.main}>
-          {children}
-        </main>
+        {children}
       </body>
     </html>
   )

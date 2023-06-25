@@ -6,9 +6,8 @@ export default function HeaderPicture() {
   return (
     <Image
       src = {Picture}
-      object-fit = "cover"
       alt = "Photo of Tim Izhanov"
-      title = "insert joke here"
+      className = {styles.image}
     />
   )
 }
